@@ -43,6 +43,9 @@ public class PublicHolidayAdapter extends ArrayAdapter<PublicHoliday> {
         tvName.setText(current.getName());
         tvDate.setText(current.getDate());
 
+        int currentImg = current.getImage();
+        ivImage.setImageResource(currentImg);
+
         return rowView;
 
     }

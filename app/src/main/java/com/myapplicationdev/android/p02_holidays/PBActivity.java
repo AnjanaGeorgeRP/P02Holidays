@@ -30,18 +30,18 @@ public class PBActivity extends AppCompatActivity {
         Intent i = getIntent();
         int choice = i.getIntExtra("choice",0);
         if (choice == 0){
-            publicHolidays.add(new PublicHoliday("New Year's Day", "1 Jan 2018"));
-            publicHolidays.add(new PublicHoliday("Labour Day", "1 May 2018"));
-            publicHolidays.add(new PublicHoliday("National Day", "9 August 2018"));
+            publicHolidays.add(new PublicHoliday("New Year's Day", "1 Jan 2018",R.drawable.newyear));
+            publicHolidays.add(new PublicHoliday("Labour Day", "1 May 2018",R.drawable.labourday));
+            publicHolidays.add(new PublicHoliday("National Day", "9 August 2018",R.drawable.nationalday));
 
         }else{
-            publicHolidays.add(new PublicHoliday("Chineese New Year", "16 Feb 2018"));
-            publicHolidays.add(new PublicHoliday("Good FriDay", "30 March 2018"));
-            publicHolidays.add(new PublicHoliday("Vesak Day", "29 May 2018"));
-            publicHolidays.add(new PublicHoliday("Hari Raya Puasa", "15 June 2018"));
-            publicHolidays.add(new PublicHoliday("Hari Raya Haji", "22 August 2018"));
-            publicHolidays.add(new PublicHoliday("Deepavali", "6 November 2018"));
-            publicHolidays.add(new PublicHoliday("Christmas Day", "25 December 2018"));
+            publicHolidays.add(new PublicHoliday("Chineese New Year", "16 Feb 2018",R.drawable.cny));
+            publicHolidays.add(new PublicHoliday("Good FriDay", "30 March 2018",R.drawable.goodfriday));
+            publicHolidays.add(new PublicHoliday("Vesak Day", "29 May 2018",R.drawable.vesakday));
+            publicHolidays.add(new PublicHoliday("Hari Raya Puasa", "15 June 2018",R.drawable.harirayapuasa));
+            publicHolidays.add(new PublicHoliday("Hari Raya Haji", "22 August 2018",R.drawable.harirayahaji));
+            publicHolidays.add(new PublicHoliday("Deepavali", "6 November 2018",R.drawable.deepavali));
+            publicHolidays.add(new PublicHoliday("Christmas Day", "25 December 2018",R.drawable.christmas));
 
         }
 
