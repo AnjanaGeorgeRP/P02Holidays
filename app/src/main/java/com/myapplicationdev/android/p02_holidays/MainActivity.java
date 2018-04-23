@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String name = pbArray[position];
-
-                Toast.makeText(MainActivity.this, name + " Selected", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(MainActivity.this,PBActivity.class);
                 intent.putExtra("choice", position);
                 startActivity(intent);
